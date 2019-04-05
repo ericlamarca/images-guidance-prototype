@@ -1,0 +1,56 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Images guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>Imagery</h1>
+			<p class="nhsuk-body-l">How to use images effectively to meet user needs.</p>
+
+				<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/when">When to use imagery</a></h2>
+						<p>Summary paragraph here.</p>
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/styles">Using the right styles</a></h2>
+						<p>Summary paragraph here. </p>
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/inclusive">Inclusive and diverse imagery</a></h2>
+						<p>Summary paragraph here.</p>
+					</div>
+				</div>
+
+				<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/accessible">Making images accessible</a></h2>
+						<p>Summary paragraph here.</p>
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/clinical">Clinical approval</a></h2>
+						<p>Summary paragraph here.</p>
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/technical">Technical considerations for the web</a></h2>
+						<p>Summary paragraph here.</p>
+					</div>
+				</div>
+
+    </div>  
+
+  </div>
+{% endblock %}

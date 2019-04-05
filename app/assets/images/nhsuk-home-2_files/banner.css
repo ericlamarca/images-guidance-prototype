@@ -1,0 +1,57 @@
+/* Survey banner 
+https://github.com/nhsuk/nhsuk-frontend/blob/master/src/components/feedback-banner/_feedback-banner.scss
+*/
+
+.nhsuk-c-feedback-banner{display:none;background:#fff;bottom:0;box-shadow:0 -4px 0 0 rgba(33,43,50,.16);margin:0 auto;padding:32px 0;position:fixed;width:100%;z-index:2}
+@media print{.nhsuk-c-feedback-banner{display:none}}
+@media (max-width:40.0525em){.nhsuk-c-feedback-banner{padding:24px 0}}.nhsuk-c-feedback-banner__content{position:relative}.nhsuk-c-feedback-banner__content:after{clear:both;content:'';display:block}.nhsuk-c-feedback-banner__header{font-size:24px;line-height:32px;margin:0;padding-right:56px}
+@media (max-width:40.0525em){.nhsuk-c-feedback-banner__header{font-size:20px;line-height:28px}}.nhsuk-c-feedback-banner__message{margin:8px 0 0}
+@media (max-width:19.9375em){.nhsuk-c-feedback-banner__message{padding-bottom:32px}}
+.nhsuk-c-feedback-banner__close{background:0 0;border:0;color:#212b32;cursor:pointer;display:block;font-size:14px;line-height:28px;margin:0;padding:0;position:absolute;right:0;top:0;text-decoration:underline}
+.nhsuk-c-feedback-banner__close:focus{background:#ffb81c;box-shadow:0 0 0 4px #ffb81c}
+.nhsuk-c-feedback-banner__close:hover{background:#ffcd60;box-shadow:0 0 0 4px #ffcd60}
+.nhsuk-c-feedback-banner__close:active{background:#ffbf33!important;box-shadow:0 0 0 4px #ffbf33}
+@media (max-width:19.9375em){.nhsuk-c-feedback-banner__close{bottom:0;position:absolute;right:0;top:auto}}
+.nhsuk-c-feedback-banner .wrap{white-space:nowrap}
+
+/* Emergency banner 
+https://github.com/nhsuk/nhsuk-frontend/blob/master/src/components/emergency-alert/_emergency-alert.scss
+*/
+
+.nhsuk-c-global-alert{background:#ffed00;padding:24px 0}
+@media (max-width:40.0525em){.nhsuk-c-global-alert{padding:16px 0}}
+@media print{.nhsuk-c-global-alert{display:none}}
+.nhsuk-c-global-alert__content{position:relative}
+.nhsuk-c-global-alert__content>:first-child{margin-top:0}
+.nhsuk-c-global-alert__content>:last-child{margin-bottom:0}
+.nhsuk-c-global-alert__header{font-size:24px;line-height:32px;margin:0;padding-right:56px}
+@media (max-width:40.0525em){.nhsuk-c-global-alert__header{font-size:20px;line-height:28px}}
+.nhsuk-c-global-alert__message{margin-top:8px}
+.nhsuk-c-global-alert__updated{font-size:14px;margin-top:8px}
+@media (max-width:40.0525em){.nhsuk-c-global-alert__updated{font-size:12px}}
+@media screen and (max-width:480px){.nhsuk-c-global-alert a{white-space:nowrap}}
+.nhsuk-c-global-alert a:focus{background:#003d78;box-shadow:0 0 0 4px #003d78;color:#fff}
+.nhsuk-c-global-alert a:hover{background:#005eb8;box-shadow:0 0 0 4px #005eb8;color:#fff}
+.nhsuk-c-global-alert a:active{background:#002f5c!important;box-shadow:0 0 0 4px #003d78;color:#fff}
+
+/* No JavaScript emergency banner button */
+
+#alertBtn {position: absolute;width: 100%;top: 80px;}
+@media (min-width: 990px) {#alertBtn {top: 133px;}}
+#alertBtn a {background-color:#ffed00;text-align: center;color: #212B32;display: block;padding: 24px;width: 100%;text-decoration: none;margin: 0;font-size: 16px;line-height: 24px;}
+@media (min-width: 40.0625em) {#alertBtn a {font-size: 19px;line-height:28px;}}
+
+/*Alpha*/
+.alpha-banner-wrap {background:#eeb027; padding:1em 0; position:fixed; bottom:0; width:100%; z-index:1;}
+.alpha-banner-wrap .alpha-visit-content {margin:0 auto; width:97.5em;}
+.alpha-banner-wrap .alpha-visit-content .survey-invite {float:left;  width:50%;}
+.alpha-banner-wrap .alpha-visit-content p {padding-bottom:0; position:relative;}
+.alpha-banner-wrap .alpha-visit-content p span {font-weight:bold;}
+.alpha-visit-content a {color:#fff;}
+.alpha-visit-content ul {float:left; list-style:none; width:50%;}
+.alpha-visit-content ul li {float:left; margin-top:.6em; margin-right:1em}
+.alpha-visit-content ul li a {background:#fff; border-radius:5px; color:#333; display:block; font-weight:bold; padding:5px 15px; text-align:center; text-decoration:none;}
+.alpha-visit-content ul li a:hover, .alpha-visit-content ul li a:active, .alpha-visit-content ul li a:focus {text-decoration:underline;}
+.alpha-visit-content .go-back {float:left;}
+.alpha-banner-wrap .alpha-visit-content a.agree {background:#3c3c3c; border-radius:0; color:#fff; font-weight:bold; padding:5px 20px;}
+.alpha-banner-wrap .alpha-visit-content a.postpone, .alpha-banner-wrap .alpha-visit-content a.disagree {background:#d7d7d7; border:1px solid #999; border-radius:0; color:#3c3c3c; font-weight:normal; padding:5px 25px;}

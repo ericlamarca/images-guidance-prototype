@@ -1,0 +1,70 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Images guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/images">Imagery</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Imagery</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Technical considerations for the web</h1>
+
+      <p>In this section:</p>
+      <ul>
+        <li><a href="#">Aspect ratio</a></li>
+        <li><a href="#">Image quality and image size</a></li>
+      </ul>
+
+      <h2 class="nhsuk-u-margin-top-8">Aspect ratio</h2>
+      <p>The aspect ratio of an image is the relationship between its width and its height.</p>
+      
+      <h3>Photography</h3>
+      <p>The aspect ratio for photographs should be 3:2</p>
+
+      {{ image({
+        "src": "https://via.placeholder.com/300x200/",
+        "alt": "Placeholder image"
+      }) }}
+
+      <h3>Illustrations or representative imagery</h3>
+
+      <p>If your image represents something physical, such as a letter or document, you should use the aspect ratio of that item.</p>
+      
+      {{ image({
+        "src": "https://via.placeholder.com/200x80/",
+        "alt": "Placeholder image"
+      }) }}
+
+
+
+      <h2 class="nhsuk-u-margin-top-8">Image quality and image size</h2>
+      <p>[Draft text here]</p>
+
+      <p>[Draft text here]</p>
+
+      <p>[Draft text here]</p>
+
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>Help improve and grow this guidance. Find out how to <a href="#">join the community and contribute</a>.</p>
+      </div>
+
+    </div>  
+
+  </div>
+{% endblock %}

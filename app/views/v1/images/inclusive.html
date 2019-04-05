@@ -1,0 +1,63 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Images guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/images">Imagery</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Imagery</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Inclusive and diverse imagery</h1>
+
+      <h2>Choosing imagery for everyone</h2>
+      <p>The NHS is for everyone. We choose images that reflect the diversity of NHS patients, the public and staff.</p>
+
+      <p>Ensure images are representative in terms of gender, race, disability, age, sexual orientation, religion, belief, gender reassignment, pregnancy and maternity marital and civil partnership status.</p>
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>Help improve and grow this guidance. Find out how to <a href="#">join the community and contribute</a>.</p>
+      </div>
+
+
+
+      <h2>Examples</h2>
+
+      <h3>NHS.UK homepage</h3>
+      <p>The NHS website's home page changes its hero image every time a user accesses it, and shows people with a range of skin tones and backgrounds.<p>
+
+      {{ image({
+        "src": "/images/nhsuk-home-1.png",
+        "alt": "Picture of allergic conjunctivitis"
+      }) }}
+
+      {{ image({
+        "src": "/images/nhsuk-home-2.png",
+        "alt": "Picture of allergic conjunctivitis"
+      }) }}
+
+      <h3>Another example</h3>
+      <p>[Draft text here]<p>
+
+      <h3>Another example</h3>
+      <p>[Draft text here]<p>
+      
+
+    </div>  
+
+  </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Images guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/images">Imagery</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Imagery</a></p>
+    </div>
+  </nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Making images accessible</h1>
+
+      <h2>Text alternatives (alt text)</h2>
+      <p>For people with access needs to be able to use images, they need a text alternative that describes the information or function conveyed.</p>
+
+      <p>This helps people using screen readers, as the text alternative can be read aloud. It also has other benefits, like making images become indexable by search engines, or acting as a fallback if an image can't be loaded.</p>
+
+      <p>More reading:</p>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt decision tree</a> (W3C Web Accessibility Tutorials)</li>
+      </ul>
+
+      <h2>Images of text</h2>
+      <p>Avoid images that contain text, because the text becomes unreadeable when the user zooms in.</p>
+      <p>It's good practice to use actual text, that is styled with CSS, raher than image-based text.<p>
+      <p>Genuine text can be resized without losing clarity or getting distorted.</p>
+      <p>Users can also modify genuine text to be a certain font size, colour or font family, to suit their needs. This is useful, for example, to people with low vision, or with cognitive disabilities that affect reading.</li>
+      
+      <p>[Show an example of an image with CSS text on top of it, to make it clear for people who don't know, etc]
+
+      <p>More reading:<p>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/tutorials/images/textual/">Images of text</a> (W3C Web Accessibility Tutorials)</li>
+      </ul>
+
+      <h2>Use of colour</h2>
+      <p>[Specific accessibility points: colour blindness, overwhelmed by too much colour, others?]
+
+
+    </div>  
+
+  </div>
+{% endblock %}
